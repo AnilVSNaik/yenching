@@ -1,0 +1,44 @@
+
+<!DOCTYPE html> 
+<html> 
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Happy 1.5 Years Baby</title>
+</head>
+<body> 
+
+<div style="text-align:center"> 
+  <video id="video1" width="420">
+    <source src="Yen_Ching.mp4" type="video/mp4">
+  </video>
+  <br><br>
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Cinema mode</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1200; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 600; 
+} 
+</script> 
+</body> 
+</html>
